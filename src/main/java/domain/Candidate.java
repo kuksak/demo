@@ -13,6 +13,7 @@ public class Candidate {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long candidateId;
     private String name;
+    //TODO: always use wrapper classes. e.g Integer;
     private int hours;
     private int price;
     private String[] skills;
