@@ -21,6 +21,12 @@ public class CandidateService {
         return repoCandidate.findAll();
     }
 
+    /**
+     * TODO: this doesn't work like this, you have to place the logic of ranking here, repo is only for
+     * data retrieval and insersetion into/from the database
+     * @param rank
+     * @return
+     */
     private List<Candidate> rankedCandidates(int rank){
         return repoCandidate.rankedCandidates(rank);
     }
