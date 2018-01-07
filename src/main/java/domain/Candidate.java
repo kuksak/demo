@@ -5,12 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class Candidate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String candidateId;
+    private Long candidateId;
     private String name;
     private int hours;
     private int price;
