@@ -18,6 +18,7 @@ public class Candidate {
     private String[] skills;
     private String domain;
     private String location;
+    private int rank;
 
     public Candidate(){
 
@@ -78,5 +79,21 @@ public class Candidate {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public Long getCandidateId() {
+        return candidateId;
+    }
+
+    public void setCandidateId(Long candidateId) {
+        this.candidateId = candidateId;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 }
