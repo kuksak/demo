@@ -23,7 +23,7 @@ public class CandidateService {
 
     /**
      * TODO: this doesn't work like this, you have to place the logic of ranking here, repo is only for
-     * data retrieval and insersetion into/from the database
+     * data retrieval and insertion into/from the database
      * @param rank
      * @return
      */
