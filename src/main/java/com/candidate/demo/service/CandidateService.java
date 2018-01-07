@@ -1,9 +1,9 @@
-package service;
+package com.candidate.demo.service;
 
-import domain.Candidate;
+import com.candidate.demo.domain.Candidate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.RepoCandidate;
+import com.candidate.demo.repository.RepoCandidate;
 
 import java.util.List;
 
