@@ -11,6 +11,36 @@ The following items should be installed in your system:
 
 ### Installation Steps:
 
+1) In the command line
+```
+mkdir demo
+cd demo
+git clone https://github.com/kuksak/demo.git
+```
+
+2) Inside Intellij
+```
+VCS -> Checkout From Version Controller -> github
+```
+
+3) Start Application.java as main java class.
+
+4) Access following link in your browser
+```
+http://localhost:8181 
+```
+
+
+## Important Links
+
+### App profile 
+```
+http://localhost:8181/profile
+```
+### Swagger UI
+```
+http://localhost:8181/swagger-ui.html
+```
 
 ### Built With
 
