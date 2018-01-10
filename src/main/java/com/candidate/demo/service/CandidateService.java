@@ -26,7 +26,7 @@ public class CandidateService {
 
 
     public List<Candidate> rankedCandidates(int rank){
-        return candidateRepository.rankedCandidates(rank);
+        return candidateRepository.findByRank(rank);
     }
 
 }
