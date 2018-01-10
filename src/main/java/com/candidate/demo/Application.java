@@ -18,8 +18,18 @@ public class Application {
                     .withDomain("Finance")
                     .withHours(10)
                     .withLocation("United States")
-                    .withName("John")
+                    .withName("John Doe")
                     .withPrice(20)
+                    .withRank(1)
+                    .withSkills(new String[]{"J2EE", "Python"})
+                    .build();
+            candidateService.save(candidate);
+            candidate = CandidateBuilder.aCandidate()
+                    .withDomain("Engineering")
+                    .withHours(45)
+                    .withLocation("United Kingdom")
+                    .withName("Jane Doe")
+                    .withPrice(35)
                     .withRank(1)
                     .withSkills(new String[]{"J2EE", "Python"})
                     .build();
