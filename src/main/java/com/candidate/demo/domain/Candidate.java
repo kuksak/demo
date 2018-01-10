@@ -13,25 +13,32 @@ public class Candidate {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long candidateId;
     private String name;
-    //TODO: always use wrapper classes. e.g Integer;
-    private int hours;
-    private int price;
+    private Integer hours;
+    private Integer price;
     private String[] skills;
     private String domain;
     private String location;
-    private int rank;
+    private Integer rank;
 
     public Candidate(){
-
     }
 
-    public Candidate(String name, int hours, int price, String[] skills, String domain, String location) {
+    public Candidate(String name, Integer hours, Integer price, String[] skills, String domain, String location, Integer rank) {
         this.name = name;
         this.hours = hours;
         this.price = price;
         this.skills = skills;
         this.domain = domain;
         this.location = location;
+        this.rank = rank;
+    }
+
+    public Long getCandidateId() {
+        return candidateId;
+    }
+
+    public void setCandidateId(Long candidateId) {
+        this.candidateId = candidateId;
     }
 
     public String getName() {
@@ -42,19 +49,19 @@ public class Candidate {
         this.name = name;
     }
 
-    public int getHours() {
+    public Integer getHours() {
         return hours;
     }
 
-    public void setHours(int hours) {
+    public void setHours(Integer hours) {
         this.hours = hours;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
@@ -82,19 +89,11 @@ public class Candidate {
         this.location = location;
     }
 
-    public Long getCandidateId() {
-        return candidateId;
-    }
-
-    public void setCandidateId(Long candidateId) {
-        this.candidateId = candidateId;
-    }
-
-    public int getRank() {
+    public Integer getRank() {
         return rank;
     }
 
-    public void setRank(int rank) {
+    public void setRank(Integer rank) {
         this.rank = rank;
     }
 }

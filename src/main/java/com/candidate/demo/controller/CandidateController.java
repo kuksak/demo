@@ -17,7 +17,7 @@ import java.util.List;
  * you don't make this long mappings
  */
 @RestController
-@RequestMapping(value = "com/candidate/demo/service")
+@RequestMapping(value = "/candidate")
 public class CandidateController {
 
     @Autowired
